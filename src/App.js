@@ -54,7 +54,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Rubik's Cube</h1>
       <div className="container">
         <div className="box"></div>
       </div>
