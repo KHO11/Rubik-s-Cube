@@ -1,68 +1,71 @@
 * {
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+}
 
 body {
-  width     : 100%;
+  width: 100%;
   min-height: 100vh;
-  overflow  : hidden;
-  cursor    : move;
+  overflow: hidden;
+  cursor: move;
 }
 
 .container {
-  width          : 600px;
-  height         : 600px;
-  position       : absolute;
-  top            : 50%;
-  left           : 50%;
-  transform      : translate(-50%, -50%);
-  display        : flex;
+  width: 600px;
+  height: 600px;
+  position : absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
   justify-content: center;
-  align-items    : center;
-  perspective    : 2000px;
+  align-items: center;
+  perspective: 2000px;
 }
 
 .box {
-  position       : absolute;
-  width          : 350px;
-  height         : 350px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
   transform-style: preserve-3d;
-  transition     : all 1s ease-out;
+  transition: all 1s ease-out;
   
 }
 
 .box div {
-  width                : 350px;
-  height               : 350px;
-  position             : absolute;
-  background           : black;
-  display              : grid;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  background: black;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(350px /4), 1fr));
-  gap                  : 4px;
-  padding              : 4px;
+  gap: 4px;
+  padding: 4px;
 
 }
 
-.top {
-  bottom   : 175px;
+.up {
+  bottom: 175px;
   transform: rotateX(90deg);
 }
 
-.bottom {
-  top      : 175px;
+.down {
+  top: 175px;
   transform: rotateX(-90deg);
 }
 
 .left {
-  right    : 175px;
+  right: 175px;
   transform: rotateY(-90deg)
 }
 
 .right {
-  left     : 175px;
+  left: 175px;
   transform: rotateY(90deg)
 }
 
@@ -75,18 +78,18 @@ body {
 }
 
 .box div span {
-  height         : calc(350px / 4 -6px);
-  background     : var(--clr);
-  position       : relative;
-  z-index        : -1;
-  overflow       : hidden;
-  text-align     : center;
-  overflow       : hidden;
-  display        : flex;
+  height: 110px;
+  background: var(--clr);
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  align-items    : center;
-  color          : #fff;
-  font-size      : 2rem;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
   background-size: 100%;
 }
 
