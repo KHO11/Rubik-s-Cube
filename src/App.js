@@ -9,11 +9,11 @@ function App() {
 
   useEffect(() => {
     
-    let box = document.querySelector('.box');
+    let rubikCube = document.querySelector('.rubikCube');
 
     for (var i of cubeSides) {
       let eachCubeSide = document.createElement('div');
-      box.appendChild(eachCubeSide);
+      rubikCube.appendChild(eachCubeSide);
       eachCubeSide.classList.add(i);
 
       eachCubeSide.setAttribute('style', `--clr:${color[cubeSides.indexOf(i)]}`);
@@ -46,16 +46,16 @@ function App() {
   });
 
   function rotateCube(x, y) {
-    let box = document.querySelector('.box');
+    let rubikCube = document.querySelector('.rubikCube');
     let Xvalue = Math.floor((x / 2) + 100);
     let Yvalue = Math.floor((y / 2) + 100);
-    box.style.transform = `rotateX(${Yvalue}deg) rotateY(${Xvalue}deg)`;
+    rubikCube.style.transform = `rotateX(${Yvalue}deg) rotateY(${Xvalue}deg)`;
   }
 
   return (
     <div className="App">
       <div className="container">
-        <div className="box"></div>
+        <div className="rubikCube"></div>
       </div>
     </div>
   );

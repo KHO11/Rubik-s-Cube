@@ -24,7 +24,7 @@ body {
   perspective: 2000px;
 }
 
-.box {
+.rubikCube {
   position: absolute;
   width: 350px;
   height: 350px;
@@ -33,7 +33,7 @@ body {
   
 }
 
-.box div {
+.rubikCube div {
   width: 350px;
   height: 350px;
   position: absolute;
@@ -73,7 +73,7 @@ body {
   transform: translateZ(-175px)
 }
 
-.box div span {
+.rubikCube div span {
   height: 110px;
   background: var(--clr);
   position: relative;
